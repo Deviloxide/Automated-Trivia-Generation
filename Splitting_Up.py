@@ -14,12 +14,13 @@ def split_paragraph_into_sentences(paragraph):
   # Return the list of sentences
   return sentences
 
-# Example usage
-paragraph = "A b bsf. dsfsd dsf. asfa. awe.a.a asdw awe 45gw\g. Mr. Rogers Sr. Mr. Rogers."
-sentences = split_paragraph_into_sentences(paragraph)
+if __name__ == '__main__':
+  # Example usage
+  paragraph = "A b bsf. dsfsd dsf. asfa. awe.a.a asdw awe 45gw\g. Mr. Rogers Sr. Mr. Rogers."
+  sentences = split_paragraph_into_sentences(paragraph)
 
-# Print the sentences
-for sentence in sentences:
-  print(sentence)
+  # Print the sentences
+  for sentence in sentences:
+    print(sentence)
 
-print(sentences)
+  print(sentences)
