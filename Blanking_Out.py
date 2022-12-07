@@ -18,8 +18,19 @@ def blank_out_noun(sentence):
     # Return the modified sentence and the noun that was replaced
     return modified_sentence, random_noun
 
-# Test the function with a sample sentence
-sentence = "The 2006 Securitas depot robbery in Tonbridge, Kent, was the largest ever cash heist in the UK."
-clozed_sentence = blank_out_noun(sentence)
-print(clozed_sentence[0])
-print(clozed_sentence[1])
+def blank_out_list(sentences):
+    blanked_sentences = []
+    for sentence in sentences:
+        if len(sentence) > 2:
+            blanked_sentences.append(blank_out_noun(sentence))
+        else:
+            blanked_sentences.append(sentence)
+    return blanked_sentences
+
+if __name__ == '__main__':
+    # Test the function with a sample sentence
+    sentence = "The 2006 Securitas depot robbery in Tonbridge, Kent, was the largest ever cash heist in the UK."
+    for i in range(100):
+        clozed_sentence = blank_out_noun(sentence)
+        print(clozed_sentence[0])
+        print(clozed_sentence[1])
