@@ -3,6 +3,6 @@ This project aims to automate the creation of trivia questions using natural lan
 
 ## Prerequisites
 You will need to have Python 3 and the following Python packages installed:
-* nltk (Natural Language Toolkit)
-* wikipedia
-* bs4 (Beautiful Soup 4)
+* [nltk](https://www.nltk.org/) (Natural Language Toolkit)
+* [wikipedia](https://github.com/goldsmith/Wikipedia)
+* [bs4](https://www.crummy.com/software/BeautifulSoup/) (Beautiful Soup 4)
